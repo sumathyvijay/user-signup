@@ -71,10 +71,6 @@ def user_signup_complete():
 
     # THESE ARE THE ERROR MESSAGES THAT OCCUR MORE THAN ONCE
 
-    err_required = "Required field"
-    err_reenter_pw = "Please re-enter password"
-    err_char_count = "must be between 3 and 20 characters"
-    err_no_spaces = "must not contain spaces"
 
     # THIS IS THE PASSWORD VALIDATION
 
