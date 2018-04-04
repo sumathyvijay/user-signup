@@ -71,6 +71,10 @@ def user_signup_complete():
 
     # THESE ARE THE ERROR MESSAGES THAT OCCUR MORE THAN ONCE
 
+    err_required = "Required field"
+    err_reenter_pw = "Please re-enter password"
+    err_char_count = "must be between 3 and 20 characters"
+    err_no_spaces = "must not contain spaces"
 
     # THIS IS THE PASSWORD VALIDATION
 
@@ -126,13 +130,15 @@ def user_signup_complete():
     # checks to see if email contains text prior to running validations
     if empty_val(email):
         # validations start here
+        """
         if not char_length(email):
             email_error = "Email " + err_char_count
             password = ''
             password_validate = ''
             password_error = err_reenter_pw
             password_validate_error = err_reenter_pw
-        elif not email_at_symbol(email):
+        el"""
+        if not email_at_symbol(email):
             email_error = "Email must contain the @ symbol"
             password = ''
             password_validate = ''
